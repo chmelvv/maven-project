@@ -52,10 +52,16 @@
           <reportPlugins>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                 <configuration>
+                      <executions>
+                           <execution>
+                           <id>validate</id>
+                           <phase>validate</phase>
+                           <configuration>
                            <violationSeverity>warning</violationSeverity>
                            <configLocation>checkstyle.xml</configLocation>
                   </configuration>
+                                       </execution>
+   </executions>
                   <reportSets>
                            <reportSet>
                                     <reports>
