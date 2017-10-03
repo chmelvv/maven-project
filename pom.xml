@@ -52,6 +52,13 @@
           <reportPlugins>
             <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
+                  <reportSets>
+                           <reportSet>
+                                    <reports>
+                                             <report>checkstyle</report>
+                                    </reports>
+                           </reportSet>
+                  </reportSets>
             </plugin>
 
             <plugin>
